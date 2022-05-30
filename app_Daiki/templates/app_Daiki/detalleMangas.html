@@ -1,0 +1,22 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1>Mangas</h1>
+<section>
+    <div class="container etiqueta">
+
+        <p>Nombre del manga: <i>{{manga.nombre}}</i></p>
+        <p>Género: <i>{{manga.genero}}</i></p>
+        <p>Autor: <i>{{manga.autor}}</i></p>
+        <p>Año de lanzamiento: <i>{{manga.anio_lanzamiento}}</i></p>
+        <p>Cantidad de tomos: <i>{{manga.cantidad_tomos}}</i></p>
+        <p>
+            <a class="bt-form-url" href="{% url 'BaseMangas' %}">Volver</a>
+        </p>
+    </div>
+</section>
+
+{% endblock %}

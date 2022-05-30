@@ -1,0 +1,20 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1>Editar/Crear Animes</h1>
+<section>
+    <div class="container">
+        <form method="POST"> {% csrf_token %}
+
+            {{ form.as_p }}
+            <input class="bt-form-url" type="submit" value="Editar / Crear">
+
+
+        </form>
+    </div>
+</section>
+
+{% endblock %}

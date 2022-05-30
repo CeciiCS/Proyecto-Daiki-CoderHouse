@@ -1,0 +1,22 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1>Películas de Anime</h1>
+<section>
+    <div class="container etiqueta">
+
+        <p>Nombre de la película: <i>{{pelicula.nombre}}</i></p>
+        <p>Estudio: <i>{{pelicula.estudio}}</i></p>
+        <p>Fecha de estreno: <i>{{pelicula.fecha_estreno}}</i></p>
+        <p>Minutos de duracion: <i>{{pelicula.duracion}}</i></p>
+        <p>
+            <a class="bt-form-url" href="{% url 'BasePeliculas' %}">Volver</a>
+        </p>
+    </div>
+</section>
+
+
+{% endblock %}

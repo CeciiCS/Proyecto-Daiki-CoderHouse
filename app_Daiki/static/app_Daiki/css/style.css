@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(227, 166, 166);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.892);
+}
+
+.coll-icon {
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
+}
+
+.nav-link {
+    color: rgb(231, 237, 242);
+}
+
+.nav-link:hover {
+    color: rgb(249, 4, 163);
+}
+
+.btn-nav {
+    background-color: rgb(244, 16, 119);
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.btn-nav:hover {
+    background-color: rgb(192, 4, 249);
+}
+
+#bienvenida {
+    color: blanchedalmond;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container-form {
+    border: rgb(251, 201, 239) solid;
+    border-radius: 5px;
+}
+
+.container {
+    margin-bottom: auto;
+}
+
+.cont-imagen {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.img-fluid {
+    height: 380px;
+    width: 80%;
+}
+
+#titulo-inicio {
+    font-size: 30px;
+    color: rgb(224, 0, 112);
+    font-weight: bold;
+
+}
+
+#p-inicio {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(97, 6, 142);
+}
+
+h1 {
+    color: rgb(156, 0, 156);
+    text-align: center;
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bt-form-base {
+    background-color: rgb(252, 37, 137);
+    color: aliceblue;
+    border: rgb(252, 37, 137) solid 5px;
+    border-radius: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+
+}
+
+.bt-form-url{
+    background-color: rgb(155, 3, 201);
+    color: aliceblue;
+    border: rgb(155, 3, 201) solid 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.crear {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 60px;
+    font-weight: bold;
+}
+
+section p{
+    margin: 0 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.etiqueta{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container h2{
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 25px;
+    color: rgb(255, 0, 132);
+    text-align: center;
+}
+
+#p-about{
+    font-size: 18px;
+    color: rgb(139, 37, 0);
+    text-align: center;
+}
+
+#img-about{
+    width: 25%;
+}
+
+.container-footer {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.footer p {
+    text-align: center;
+    color: aliceblue;
+    font-size: 14px;
+}
+
+/*Formulario de registro, login*/
+
+.p-form {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-registro {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.bt-form-registro {
+    background-color: rgb(252, 37, 137);
+    color: aliceblue;
+    border: rgb(252, 37, 137) solid 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 15px
+}
+
+label {
+    margin-left: 15px;
+    font-weight: bold;
+}

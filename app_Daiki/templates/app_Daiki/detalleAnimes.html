@@ -1,0 +1,22 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1>Animes</h1>
+<section>
+    <div class="container etiqueta">
+
+        <p>Nombre del manga: <i>{{anime.nombre}}</i></p>
+        <p>Estado de emisión: <i>{{anime.estado_emision}}</i></p>
+        <p>Estudio: <i>{{anime.estudio}}</i></p>
+        <p>Cantidad de temporadas: <i>{{anime.temporadas}}</i></p>
+        <p>
+            <a class="bt-form-url" href="{% url 'BaseAnimes' %}">Volver</a>
+        </p>
+    </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1>Búsqueda de Mangas</h1>
+
+<p>Ingresa el género del Manga a buscar:</p>
+   
+   <form action="/app_Daiki/buscar/" method="GET">
+
+    <input type="text" name="genero" id="genero">
+
+    <input class="bt-form-registro" type="submit" value="Buscar">
+    </form>
+
+{% endblock %}
+

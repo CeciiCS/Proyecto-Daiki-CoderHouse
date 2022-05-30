@@ -1,0 +1,45 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1>Películas de Anime</h1>
+<section>
+    <p>Además del Anime y los Mangas, las películas de animación japonesa también se han dado a conocer en todo el mundo.</p>
+    <p>En esta sección, te dejamos algunas películas que han sido muy importantes y que ha permitido mostrar el arte de la animación de Japón:</p>
+    <div class="crear">
+        <p>¿Quieres agregar una Película?</p>
+        <a class="bt-form-base" href="{% url 'NewPeliculas' %}">Crear</a>
+    </div>
+
+    <div class="container">
+        <ul>
+
+            {% for pelicula in object_list %}
+
+            <li>
+
+                <p>Nombre: {{pelicula.nombre}}</p>
+
+                <p>
+
+
+                    <a class="bt-form-url" href="{% url 'DetallePeliculas' pelicula.id %}">Ver</a>
+                    <a class="bt-form-url" href="{% url 'EditPeliculas' pelicula.id %}">Editar</a>
+                    <a class="bt-form-url" href="{% url 'DeletePeliculas' pelicula.id %}">Eliminar</a>
+
+
+                </p>
+
+            </li>
+
+            {% endfor %}
+
+
+
+        </ul>
+    </div>
+</section>
+
+{% endblock %}

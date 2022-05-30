@@ -1,0 +1,24 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1>Iniciar sesión en Daiki</h1>
+
+<div class="container">
+    <div class="container-form">
+        <form action="" method="POST">
+            <p class="p-form">¡Ingresa a tu cuenta Daiki!</p>
+
+            {% csrf_token %}
+
+            {{form.as_p}}
+
+            <button class="bt-form-registro" type="submit">Iniciar sesión</button>
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}

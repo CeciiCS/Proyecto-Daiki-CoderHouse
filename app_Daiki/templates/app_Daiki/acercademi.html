@@ -1,0 +1,22 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+<section class="container">
+    <h1>¿Quién soy?</h1>
+    <h2>Un poco acerca de mí</h2>
+    <div id="p-about">
+    <p>Mi nombre es Cecilia Crisóstomo Santander, Ingeniero Comercial de profesión y aprendiendo de programación.</p>
+    <p>Me encanta todo lo relacionado con el Anime, el rock y los chocolates</p>
+    <p>Este sitio se ha creado como proyecto del curso de Python de CoderHouse</p>
+    <p>Desde Chile con amor :D</p>
+</div>
+<div class="cont-imagen">
+
+    <img src="{% static '/app_Daiki/assets/pandi-kawaii.png' %}" id="img-about" alt="pandi-kawaii">
+
+</div>
+</section>
+
+{% endblock %}

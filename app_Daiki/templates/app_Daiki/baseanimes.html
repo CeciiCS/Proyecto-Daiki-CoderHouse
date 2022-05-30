@@ -1,0 +1,50 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1>Animes</h1>
+<section>
+    <p>El anime, (en japonés, アニメtambién escrito ánime y animé en español), es
+        un estilo de animación tradicional o por computadora de origen japonés.
+        El Anime se caracteriza fundamentalmente por el uso de la animación limitada, la expresión en plano, la
+        suspensión del tiempo, su amplitud temática, la presencia de figuras históricas, su compleja línea narrativa y
+        sobre todo, un peculiar estilo neotenico de dibujo, con personajes caracterizados por ojos grandes y ovalados,
+        de línea muy definida, colores llamativos y movimiento reducido de los labios. (wikipedia)</p>
+    <p>Aquí, te dejamos una selección de los Animes más impactantes a nivel de audiencia:</p>
+    <div class="crear">
+        <p>¿Quieres agregar un Anime?</p>
+        <a class="bt-form-base" href="{% url 'NewAnimes' %}">Crear</a>
+    </div>
+    <div class="container">
+        <ul>
+
+            {% for anime in object_list %}
+
+            <li>
+
+                <p>Nombre: {{anime.nombre}}</p>
+
+                <p>
+
+
+                    <a class="bt-form-url" href="{% url 'DetalleAnimes' anime.id %}">Ver</a>
+                    <a class="bt-form-url" href="{% url 'EditAnimes' anime.id %}">Editar</a>
+                    <a class="bt-form-url" href="{% url 'DeleteAnimes' anime.id %}">Eliminar</a>
+
+
+                </p>
+
+            </li>
+
+            {% endfor %}
+
+
+
+        </ul>
+    </div>
+</section>
+
+
+{% endblock %}

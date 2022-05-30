@@ -1,0 +1,44 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1>Mangas</h1>
+<section>
+    <p>Manga (kanji: 漫画; hiragana: まんが; katakana: マンガ?) es la palabra japonesa para designar las historietas en general.
+        Fuera de Japón, se utiliza para referirse a las historietas de origen japonés. (wikipedia)</p>
+    <p>Aquí, podrás encontrar una selección de Mangas de diferentes géneros, que serán de tu gran interés:</p>
+    <div class="crear">
+        <p>¿Quieres agregar un Manga?</p>
+        <a class="bt-form-base" href="{% url 'NewMangas' %}">Crear</a>
+    </div>
+
+    <div class="container">
+        <ul>
+
+            {% for manga in object_list %}
+
+            <li>
+
+                <p>Nombre: {{manga.nombre}}</p>
+
+                <p>
+
+
+                    <a class="bt-form-url" href="{% url 'DetalleMangas' manga.id %}">Ver</a>
+                    <a class="bt-form-url" href="{% url 'EditMangas' manga.id %}">Editar</a>
+                    <a class="bt-form-url" href="{% url 'DeleteMangas' manga.id %}">Eliminar</a>
+
+
+                </p>
+
+            </li>
+
+            {% endfor %}
+
+        </ul>
+    </div>
+</section>
+
+{% endblock %}

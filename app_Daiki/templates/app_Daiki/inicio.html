@@ -1,0 +1,21 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1 id="titulo-inicio">¡Bienvenidos a Daiki!</h1>
+<p id="p-inicio">El sitio con tus series de anime, mangas y películas favoritos</p>
+
+<h3 class="text-center">{{mensaje}}</h3>
+
+<div class="container">
+<div class="cont-imagen">
+
+    <img src="{% static '/app_Daiki/assets/anime.jpg' %}" class="img-fluid" alt="anime-portada">
+
+</div>
+</div>
+
+
+{% endblock %}

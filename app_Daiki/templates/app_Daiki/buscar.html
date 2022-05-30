@@ -1,0 +1,23 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+    <p>Buscar género: {{genero}}</p>
+
+    {% if mangas %}
+
+    <ul>
+    {% for manga in mangas %}
+        <li>Manga: {{manga.nombre}}</li>
+        <li>Género: {{manga.genero}}</li>
+        <li>Autor: {{manga.autor}}</li>
+        <li>Año de lanzamiento: {{manga.anio_lanzamiento}}</li>
+        <li>Cantidad de tomos: {{manga.cantidad_tomos}}</li>
+    {% endfor %}
+    </ul>
+
+    {% endif %}
+
+{% endblock %}

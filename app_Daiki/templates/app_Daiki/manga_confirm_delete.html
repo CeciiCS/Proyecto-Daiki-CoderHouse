@@ -1,0 +1,21 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1>Eliminar Mangas</h1>
+
+<section>
+    <div class="container">
+        <form method="POST"> {% csrf_token %}
+
+            <p>¿Seguro que desea eliminar este Manga "{{ object }}"?</p>
+
+            <input class="bt-form-url" type="submit" value="Eliminar">
+
+        </form>
+    </div>
+</section>
+
+{% endblock %}

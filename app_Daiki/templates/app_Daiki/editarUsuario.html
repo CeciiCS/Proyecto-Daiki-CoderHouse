@@ -1,0 +1,32 @@
+{% extends "app_Daiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoConCambios %}
+
+<h1 style="color: blue; font-size: 25px;">Editar Perfil de Usuario</h1>
+
+{% if editFormUser.errors %}
+
+<p style="color: red;">Datos incorrectos</p>
+
+{% endif %}
+
+<div class="container">
+    <div class="container-form">
+
+        <form action="" method="POST"> {% csrf_token %}
+
+            <table>
+
+                {{editFormUser.as_table}}
+
+            </table>
+
+            <input class="bt-form-registro" type="submit" , value="Enviar">
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}
